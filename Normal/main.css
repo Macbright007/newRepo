@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* All Body  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "lato", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.container{
+    height: 100vh;
+    background-color: #2f2fa2;
+    overflow-y: scroll;
+}
+
+/* Nav Bar  */
+nav{
+    width: 100%;
+    max-width: 900px;
+    margin:1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav h1{
+    font-size: 30px;
+    color: rgb(201, 94, 27);
+    font-weight: 900;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-top: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 40px;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.654);
+    font-size: 18px;
+}
+nav button{
+    padding: 10px 27px;
+    border:2px solid rgb(201, 94, 27) ;
+    background-color: inherit;
+    color: rgb(194, 98, 39);
+    margin-top: 5px;
+}
+nav button:hover{
+    background-color: rgb(201, 94, 27);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Main  */
+.search{
+    max-width: 300px;
+    border: 2px solid rgb(194, 98, 39) ;
+    margin: 3.5rem auto;
+}
+.search input[type="search"]{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+}
+.search input[type="search"]::placeholder{
+    color: white;
+    font-size: 15px;
+}
+.search input[type="search"]:focus{
+    color: rgb(194, 98, 39);
+    background-color: white;
+    outline: none;
+}
+.search input[type="search"]:focus::placeholder{
+    color: rgb(194, 98, 39);
+}
+section{
+    margin: 3rem auto;
+    max-width: 1000px;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+hr{
+    border: 2px solid white;
+    width: 1000px;
+    margin:2rem auto;
+}
+.section-container{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.section-img{
+    border-radius: 20px;
+}
+.section-img img{
+    border-radius: 20px;
+}
+.section-items p{
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.link-div{
+    width: 100%;
+    max-width: 200px;
+    margin: 2rem auto;
+}
+.link{
+    outline: rgb(194, 98, 39) solid 2px;
+    /* background-color: #f44336; */
+    color: rgb(194, 98, 39);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.link:hover{
+    background-color: rgb(201, 94, 27);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer  */
+footer p{
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    padding: 30px 17px;
+}
+
+  

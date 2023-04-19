@@ -1,0 +1,30 @@
+body{
+    position: relative;
+    height: 100%;
+    padding-bottom: 2.5rem;    
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgb(140, 138, 138) !important ;
+}
+input[type="search"]{
+    background-color: brown !important;
+}
+input[type="search"]::placeholder{
+    color: white !important;
+}
+input[type="search"]:focus{
+    background-color: white !important;
+    color: black !important;
+}
+input[type="search"]:focus::placeholder{
+    color: black !important;
+}
+footer{
+    height: 2.5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
