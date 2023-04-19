@@ -22,6 +22,12 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+
+span{
+    display: none;
+    font-size: 30px;
+}
+
 nav h1{
     font-size: 30px;
     color: rgb(201, 94, 27);
@@ -60,7 +66,7 @@ nav button:hover{
 
 /* Main  */
 .search{
-    max-width: 300px;
+    max-width: 400px;
     border: 2px solid rgb(194, 98, 39) ;
     margin: 3.5rem auto;
 }
@@ -87,14 +93,14 @@ section{
     max-width: 1000px;
 }
 section h2{
-    text-align: center;
+    text-align: left;
     margin-bottom: 2rem;
 }
-hr{
+/* hr{
     border: 2px solid white;
     width: 1000px;
     margin:2rem auto;
-}
+} */
 .section-container{
     margin-top: 1.5rem;
     display: flex;
@@ -140,4 +146,54 @@ footer p{
     padding: 30px 17px;
 }
 
+/* responsive desgin using media query */
+
+@media (max-width: 600px) {
+    nav{
+        max-width: 500px;
+    }
+    nav h1{
+        font-size: 40px;
+    }
+   nav ul{
+    display: none;
+   }
+   nav button{
+    display: none;
+   }
+
+   span {
+    display: block;
+    margin-top: 3px;
+   }
+   .search{
+    max-width: 300px;
+   }
+   /* .sect{
+    border: 2px solid white;
+   } */
+
+   .sect h2{
+    font-size: 35px;
+    margin-left: 1rem;
+   }
+   .section-container{
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    /* border: 2px solid white; */
+   }
+
+   .section-items p{
+    font-size: 20px;
+    padding: 1rem 0px;
+   }
+
+   .section-img{
+    width: 100%;
+}
+   .section-img img{
+    width: 100%!important;
+}
+}
   
